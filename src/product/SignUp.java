@@ -270,6 +270,7 @@ public class SignUp extends JPanel{
 		
 		int countUpper = 0 ;
 		int countNumber = 0 ;
+		int numberOfEmailChar = 0 ;
 		
 		if(password.length() >= 6) {
 			
@@ -288,9 +289,12 @@ public class SignUp extends JPanel{
 		
 		for(int i=0; i<email.length();i++) {
 			char ch = email.charAt(i);
-			if(ch == '@')
+			if(ch == '@') {
 				flagEmail = true ;
-				
+				numberOfEmailChar++ ;
+			}
+			if (numberOfEmailChar > 1)
+				flagEmail = false ;
 		}
 		
 		if(sAns.equals(""))
