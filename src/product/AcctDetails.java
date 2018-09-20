@@ -187,7 +187,7 @@ public class AcctDetails {
 			
 			if (act.getSource() == emailButton) {
 				int userOption = JOptionPane.YES_NO_OPTION;
-				userOption = JOptionPane.showConfirmDialog(null ,"Your email is "+array[2]+". To change your email press YES. Press NO to go back to the Edit Account Page");
+				userOption = JOptionPane.showConfirmDialog(null ,"Your email is "+array[4]+". To change your email press YES. Press NO to go back to the Edit Account Page");
 				
 				if(userOption == JOptionPane.YES_OPTION) {
 					for(int i=0; i>=0; i++) {
