@@ -239,24 +239,25 @@ public class AcctDetails {
 		int countNumber = 0 ;
 		boolean flagPass = true ;
 		if(pass.length() >= 6) {
-				
-			for (int i=0; i<pass.length(); i++) {
-				char ch = pass.charAt(i);
-				if (Character.isUpperCase(ch))
-					countUpper ++;
-				if (Character.isDigit(ch))
-					countNumber ++;
-				
-			}
 			
-			if(!pass.equals(cPass))
-				flagPass = false ;
-			if(countUpper < 1 || countNumber < 1)
-				flagPass = false ;
+		for (int i=0; i<pass.length(); i++) {
+			char ch = pass.charAt(i);
+			if (Character.isUpperCase(ch))
+				countUpper ++;
+			if (Character.isDigit(ch))
+				countNumber ++;
+			}
+		
+		if(!pass.equals(cPass))
+			flagPass = false ;
 		}
+		
+		if(countUpper < 1 || countNumber < 1)
+			flagPass = false ;
+			
 		return flagPass ; 
 
-	}
+}
 	
 	/**
 	 * method to validate the email
