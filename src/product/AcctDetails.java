@@ -266,13 +266,16 @@ public class AcctDetails {
 	 */
 	public boolean isEmailValid (String email, String cEmail) {
 		boolean flagEmail = false ;
+		int numberOfEmailChar = 0;
 		
 		for(int i=0; i<email.length();i++) {
 			char ch = email.charAt(i);
-			if(ch == '@')
+			if(ch == '@') {
 				flagEmail = true ;
+				numberOfEmailChar++;
+			}
 				
-			if(!email.equals(cEmail))
+			if(!email.equals(cEmail) || numberOfEmailChar > 1)
 				flagEmail = false;
 		}
 		return flagEmail ; 
