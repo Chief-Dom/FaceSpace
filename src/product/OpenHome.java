@@ -31,6 +31,7 @@ public class OpenHome {
 	JButton acctDet = new JButton("Account Details");
 	JButton logout = new JButton("Logout");
 	Database db;
+	String[] array;
 	
 	
 	private JFrame frame = new JFrame("Your FaceSpace Home");
@@ -43,6 +44,7 @@ public class OpenHome {
 	 * @param db The database class that saves and accesses user account information 
 	 */
 	public OpenHome(String[] array, Database db) {
+		this.array = array;
 		this.db = db;
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -107,8 +109,8 @@ public class OpenHome {
 				Login login = new Login(db);
 				frame.dispose();
 			} else if (act.getSource() == acctDet) {
-				//Make account details constructor 
-				//frame.dispose();
+				AcctDetails ad = new AcctDetails(array, db);
+				frame.dispose();
 			}
 		}
 	}	
