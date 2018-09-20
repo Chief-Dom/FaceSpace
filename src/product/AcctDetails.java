@@ -179,7 +179,7 @@ public class AcctDetails {
 						//code to return to account details
 						break;
 					} else
-						JOptionPane.showMessageDialog(null,"Your new password does not follow the rules for a valid passwrod. For a password, atleast one letter should be capital and there should be atleast one number.", "Try Again" ,JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(null,"Your new password does not follow the rules for a valid password. For a password, at least one letter should be capital and there should be at least one number.", "Try Again" ,JOptionPane.ERROR_MESSAGE);
 				}
 			}
 
@@ -202,7 +202,7 @@ public class AcctDetails {
 						//code to return to account details
 						break;
 					} else
-						JOptionPane.showMessageDialog(null,"Your new email is invalid. For a password", "Try Again" ,JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(null,"Your new email is invalid", "Try Again" ,JOptionPane.ERROR_MESSAGE);
 					}
 				}
 			}
