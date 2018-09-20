@@ -9,17 +9,10 @@ Andreas Ryeng
 ------Requirements------ 
 The test package in this application requires JUnit 4 to operate correctly.
 
------Compiling------
-To compile, navigate to the directory where the .java files are located, then
-type:
-
-javac FaceSpace.java
-
-then to run, type:
-
-java FaceSpace
-
-Please ensure that your database.txt file is in the same directory as your .java files
+-----Running------
+In the program's current state, all files must be imported to an IDE
+to run properly. We recommend importing the project into Eclipse so that
+the JUnit GUI can be used.
 
 ------Added Features------
 
