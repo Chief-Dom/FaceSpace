@@ -175,8 +175,8 @@ public class AcctDetails {
 					if(isPasswordValid(password, cPassword)) {
 						array[1]= password ;
 						data.editPassword(array) ;
-						JOptionPane.showMessageDialog(null, "Password Chnaged Successfully");
-						//code to return to account detials
+						JOptionPane.showMessageDialog(null, "Password Changed Successfully");
+						//code to return to account details
 						break;
 					} else
 						JOptionPane.showMessageDialog(null,"Your new password does not follow the rules for a valid passwrod. For a password, atleast one letter should be capital and there should be atleast one number.", "Try Again" ,JOptionPane.ERROR_MESSAGE);
@@ -198,8 +198,8 @@ public class AcctDetails {
 						array[4] = email ;
 						emailLabel.setText(array[4]);
 						data.editEmail(array) ;
-						JOptionPane.showMessageDialog(null, "Email Chnaged Successfully");
-						//code to return to account detials
+						JOptionPane.showMessageDialog(null, "Email Changed Successfully");
+						//code to return to account details
 						break;
 					} else
 						JOptionPane.showMessageDialog(null,"Your new email is invalid. For a password", "Try Again" ,JOptionPane.ERROR_MESSAGE);
