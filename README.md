@@ -1,10 +1,10 @@
 This is Version 2 of FaceSpace
 
 -------Authors-------
-Marcus Henke 
-Dominik Huffield 
-Rohit Gangurde 
-Andreas Ryeng
+- Marcus Henke
+- Dominik Huffield 
+- Rohit Gangurde 
+- Andreas Ryeng
 
 ------Requirements------ 
 The test package in this application requires JUnit 4 to operate correctly.
